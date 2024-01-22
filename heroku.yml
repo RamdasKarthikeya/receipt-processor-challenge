@@ -1,8 +1,7 @@
 build:
   docker:
     web: Dockerfile
-run:
-  worker:
-    command:
-      - java -jar ./build/libs/receiptProcessorChallenge-0.0.1-SNAPSHOT.jar
-    image: openjdk:11-jre-slim
+release:
+  command:
+    - chmod +x deploy-script.sh
+    - ./deploy-script.sh
