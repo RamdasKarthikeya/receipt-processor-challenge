@@ -1,4 +1,5 @@
 FROM amazoncorretto:11
 EXPOSE 8080
-ADD target/receiptProcessorChallenge-0.0.1-SNAPSHOT.jar receiptProcessorChallenge.jar
-ENTRYPOINT ["java","-jar","/receiptProcessorChallenge.jar"]
+ARG JAR_FILE=build/libs/receiptProcessorChallenge-0.0.1-SNAPSHOT.jar
+COPY ${JAR_FILE} app.jar
+ENTRYPOINT ["java","-jar","/app.jar"]
