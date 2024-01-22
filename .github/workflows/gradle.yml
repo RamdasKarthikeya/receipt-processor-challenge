@@ -34,6 +34,8 @@ jobs:
       id: jar_location
       run: |
         jar_location=$(find $GITHUB_WORKSPACE -name '*.jar' -print -quit)
+        echo "JAR_LOCATION: $jar_location"
+        echo "##[set-output name=jar_location;]$jar_location"
         echo "JAR_LOCATION=$jar_location" >> $GITHUB_ENV
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
