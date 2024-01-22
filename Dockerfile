@@ -1,5 +1,5 @@
 FROM amazoncorretto:11
 EXPOSE 8080
-ARG JAR_FILE=build/libs/*.jar
+ARG JAR_FILE=/home/runner/work/receipt-processor-challenge/receipt-processor-challenge/*.jar
 COPY ${JAR_FILE} app.jar
 ENTRYPOINT ["java","-jar","/app.jar"]
