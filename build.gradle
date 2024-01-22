@@ -6,7 +6,6 @@ plugins {
 
 apply plugin: 'org.springframework.boot'
 
-mainClassName = 'receipt.processor.challenge.receiptProcessorChallenge.ReceiptProcessorChallengeApplication'
 group = 'receipt.processor.challenge'
 version = '0.0.1-SNAPSHOT'
 
