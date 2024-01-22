@@ -28,3 +28,10 @@ tasks.named('test') {
 	useJUnitPlatform()
 }
 
+bootJar {
+    archiveClassifier.set('boot')
+}
+
+jar {
+    archiveClassifier.set('')
+}
