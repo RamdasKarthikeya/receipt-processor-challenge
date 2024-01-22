@@ -4,5 +4,5 @@ build:
 
 release:
   command:
-    - "java -jar /app.jar"
+    - "java -jar /app.jar receipt.processor.challenge.receiptProcessorChallenge.ReceiptProcessorChallengeApplication"
     
