@@ -5,4 +5,4 @@ run:
   worker:
     command:
       - java -jar ./build/libs/receiptProcessorChallenge-0.0.1-SNAPSHOT.jar
-    image: web    
+    image: openjdk:11-jre-slim
