@@ -4,5 +4,5 @@ build:
 
 release:
   command:
-    - "java -jar *.jar"
+    - "java -jar /app.jar"
     
