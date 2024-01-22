@@ -30,6 +30,9 @@ jobs:
         distribution: 'temurin'
     - name: Build with Gradle
       run: gradle clean build
+    - name: Get JAR file location
+      id: jar_location
+      run: echo "::set-output name=jar_location::$(find $GITHUB_WORKSPACE -name '*.jar' -print -quit)"
     - uses: mr-smithers-excellent/docker-build-push@v6
       name: Build & push Docker image
       with:
